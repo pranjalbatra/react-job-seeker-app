@@ -1,0 +1,88 @@
+@import './variables.scss';
+
+.margin_defult{
+    margin: 5px $margin_default;
+}
+
+.primaryButton{
+    background-image: linear-gradient(101deg, #ca4091, #0250c5);
+    font-size: $fmed;
+    font-weight: $bold;
+    text-transform: uppercase;
+    color: $white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 2px solid $white;
+}
+
+.primaryButtonBlue{
+    position: relative;
+    background-color: $primary;
+    font-size: $fl;
+    letter-spacing: 1px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    color: $white;
+    padding: 12px 56px;
+    border-radius: 10px;
+    
+}
+.iconButton{
+    padding: 12px 60px 12px 15px;
+    font-size: $fmed;
+    svg{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.iconImage{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.heading{
+    font-size: $fl;
+    font-weight: $bold;
+    letter-spacing: 1;
+    color: $blackBase;
+    display: inline-block;
+    margin-bottom: $margin_bottom;
+    &:after {
+        content: ""; 
+        display: block; 
+        margin: 0 auto; 
+        width: 50%; 
+        padding-top: 3px; 
+        border-bottom: 2px solid $primary; 
+    }
+}
+
+.headingLeftBorder{
+    font-size: $fl;
+    font-weight: $bold;
+    letter-spacing: 1;
+    color: $white;
+    display: inline-block;
+    margin-bottom: $margin_bottom;
+    &:after {
+        content: ""; 
+        display: block; 
+        width: 50%; 
+        padding-top: 3px; 
+        border-bottom: 3px solid $primary; 
+    }
+}
+.capitalBold{
+    font-size: $fmed;
+    font-weight: $bold;
+    text-transform: uppercase;
+    margin: 5px 0;
+    color: $black2;
+}
+.darkBackground{
+    background: $lightGrey;
+}

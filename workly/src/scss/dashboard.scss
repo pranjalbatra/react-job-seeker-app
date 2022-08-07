@@ -1,0 +1,94 @@
+@import './variables.scss';
+
+body{
+    background: $lightGrey;
+    font-family: $open;
+}
+
+.sidebar{
+    background: $black;
+    height: 100vh;
+    width: 20%;
+    position: fixed;
+    transition: width 0.5s;
+    z-index: 100;
+    ul{
+        list-style: none;
+        padding-inline-start: 0em; 
+    }
+    .active{
+        background-image: linear-gradient(99deg, #ca4091, #0250c5);
+    }
+    .link{
+        visibility: visible;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+.sidebarClosed{
+    width: 0px;
+    overflow: hidden;
+    .link{
+        visibility: hidden;
+    }
+}
+
+.logo{
+    text-align: center;
+    margin: 10px;
+}
+
+.sidebarItem{
+    border: 1px solid #343434;
+    border-radius: 6px;
+    color: $white;
+    font-size: $fmed;
+    text-transform: uppercase;
+    font-weight: $bold;
+    letter-spacing: 0.5px;
+    line-height: 1.38;
+    margin: 0 15px;
+}
+
+.topbar{
+    background: $primary;
+    padding-inline-start: 15px;
+    top: 0px;
+    width: 80%;
+    left: 20%;
+    height: 70px;
+    position: fixed;
+    transition: all 0.5s;
+    z-index: 99;
+    h2{
+        margin: 0px;
+        padding: 20px;
+        color: $white;
+        font-size: $fl;
+        font-weight: $bold;
+    }
+    .postJob{
+        font-size: $fmedL;
+        padding: 8px 70px;
+        margin: 10px 5px;
+    }
+}
+.topbarWide{
+    width: 100%;
+    left: 0%;
+}
+
+.content{
+    top: 65px;
+    position: relative;
+    padding: 20px 0px 60px 30px;
+}
+.contentWide{
+    width: 100%;
+}
+.contentNarrow{
+    left: 21%;
+    width: 77%;
+}

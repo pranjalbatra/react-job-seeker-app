@@ -1,0 +1,4 @@
+export const searchConstants = {
+    REQUEST_LIST: 'REQUEST_LIST_CANDIDATES',
+    GET_LIST_SUCCESS: 'GET_LIST_SUCCESS_CANDIDATES',
+};

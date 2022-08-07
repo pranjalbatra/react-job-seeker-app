@@ -1,0 +1,47 @@
+@import './variables.scss';
+
+.reviewBlock{
+    img{
+        height: 80;
+        width: 80;
+        border-radius: 5px;
+        box-shadow: 1px 1px 4px $black3;
+        margin-bottom: $margin_bottom;
+    }
+    h4{
+        text-transform: uppercase;
+    }
+    h5{
+        text-transform: uppercase;
+    }
+    blockquote{
+        font-size: 18px;
+        padding: 0.35em 40px;
+        line-height: 1.45;
+        position: relative;
+        color: $black3;
+
+        &:before {
+            font-family: Georgia, serif;
+            display: block;
+            padding-left: 10px;
+            content: "\201C";
+            font-size: 80px;
+            position: absolute;
+            left: -20px;
+            top: -20px;
+            color: $blackBase;
+        }
+        &:after {
+            font-family: Georgia, serif;
+            display: block;
+            padding-left: 10px;
+            content: "\201D";
+            font-size: 80px;
+            position: absolute;
+            right: -20px;
+            top: -20px;
+            color: $blackBase;
+        }
+    }
+}

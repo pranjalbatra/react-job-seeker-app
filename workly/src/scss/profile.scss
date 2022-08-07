@@ -1,0 +1,36 @@
+@import './variables.scss';
+
+.basicDetails{
+    margin: $margin_default;
+    h3{
+        font-size: $fl;
+        font-weight: $bold;
+        color: $blackBase;
+        text-transform: uppercase;
+        margin-top: $margin_default;
+        span{
+            font-size: $fmedL;
+            font-weight: $semi_bold;
+            color: $primary;
+            margin-left: $margin_left;
+        }
+    }
+
+    h4{
+        font-size: $fmed;
+        color: $black3;
+        text-transform: uppercase;
+    }
+    .phone{
+        text-align: right;
+    }
+    .email{
+        text-align: left;
+        text-transform: lowercase;
+    }
+    .hireMe{
+        padding: 8px 130px;
+        text-transform: uppercase;
+        background: $primary;
+    }
+}
